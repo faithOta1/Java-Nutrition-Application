@@ -2,29 +2,11 @@ package org.example;
 
 import javax.swing.*;
 import java.awt.*;
-<<<<<<< HEAD
 
 public class HomePage {
     public static void setUp() {
         JFrame frame = new JFrame("PawPlates");
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-=======
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-public class HomePage {
-    /*
-    * GOAL: This is the home page that will show up POST-login that connects the other pages (tracking cals/workouts,
-    * setting goals, & signing up for classes).
-    * COMPLETED: menu bars for other pages & logout
-    * IN-PROGRESS: making the buttons do something, adding the other windows, formatting the page, ...
-     */
-
-    // set up the main screen
-    public static void setUp() {
-        JFrame frame = new JFrame("PawPlates");
-        frame.setExtendedState(JFrame.MAXIMIZED_BOTH); // open the window to a full screen 
->>>>>>> homePage
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         JPanel contentPane = new JPanel(new BorderLayout());
@@ -42,11 +24,7 @@ public class HomePage {
         gbc.anchor = GridBagConstraints.WEST;
         menuBarPanel.add(userMenuBar(), gbc);
 
-<<<<<<< HEAD
         // Add logoutMenuBar to the right
-=======
-        // add logoutMenuBar to the right
->>>>>>> homePage
         gbc.gridx = 1;
         gbc.gridy = 0;
         gbc.weightx = 0.0;
@@ -54,17 +32,10 @@ public class HomePage {
         gbc.anchor = GridBagConstraints.EAST;
         menuBarPanel.add(logoutMenuBar(), gbc);
 
-<<<<<<< HEAD
         // Add the menu bar panel to the frame
         contentPane.add(menuBarPanel, BorderLayout.NORTH);
 
         // Add other content to the frame's center if needed
-=======
-        // add the menu bar panel to the frame
-        contentPane.add(menuBarPanel, BorderLayout.NORTH);
-
-        // add other content to the frame's center if needed
->>>>>>> homePage
         JPanel mainPanel = new JPanel();
         mainPanel.add(new JLabel("HOME PAGE IN PROGRESS"));
         contentPane.add(mainPanel, BorderLayout.CENTER);
