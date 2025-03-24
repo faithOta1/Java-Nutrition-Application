@@ -9,7 +9,7 @@ public class SleepPage {
     private static JProgressBar SleepProgress;
     private static JLabel progressLabel;
 
-    public static void setUp() {
+    public SleepPage() {
         JFrame frame = new JFrame("Sleep Tracker");
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -97,9 +97,5 @@ public class SleepPage {
 
     private static String getProgressText() {
         return String.format("Weekly Sleep Progress: %d / %d hours", totalSleep, WEEKLY_GOAL);
-    }
-
-    public static void main(String[] args) {
-        setUp();
     }
 }
