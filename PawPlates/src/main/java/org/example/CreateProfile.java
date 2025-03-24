@@ -3,7 +3,7 @@ package org.example;
 import javax.swing.*;
 import java.awt.*;
 
-/* NOTE: This file contains code (menu, logout) taken from CalorieMacroPage for consistency throughout
+/* NOTE: This file contains code (menu, logout) taken from other files for consistency throughout
 the website general layout format, but this code is labelled as such for credit to the original programmer.
 NEW CODE: Initial create profile interface. User provides first and last name, then has a dropdown
 box for gender and fitness level. then they have 2 drop down boxes for security question
@@ -11,12 +11,13 @@ choices for resetting their password later if needed, and then they type in thei
 * */
 public class CreateProfile {
     //testing
+    /*
     public static void main(String[] args) {
         setUp();
-    }
+    }*/
 
     public static void setUp() {
-        //taken from CalorieMacroPage.java for consistency
+        //code from other menu layout file
         JFrame frame = new JFrame("Create Profile");
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -145,7 +146,7 @@ public class CreateProfile {
     }
 
 
-    //taken from CalorieMacroPage.java for consistency
+    //taken from other file for consistency
     public static JMenuBar userMenuBar() {
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("Menu");
@@ -160,7 +161,7 @@ public class CreateProfile {
         menuBar.add(menu);
         return menuBar;
     }
-    //taken from CalorieMacroPage.java for consistency
+    //taken from other file for consistency
     public static JMenuBar logoutMenuBar() {
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("Logout");
